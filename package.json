@@ -1,0 +1,48 @@
+{
+  "name": "pindo-js",
+  "version": "1.0.0",
+  "description": "A package for pindo",
+  "author": {
+    "name": "Mamane Bello",
+    "email": "moussabello19@gmail.com",
+    "license": "MIT"
+  },
+  "main": "./dist/pindo.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-mocha tests/**/**/*.test.ts",
+    "coverage": "nyc yarn test",
+    "lint": "eslint src/**/*.ts"
+  },
+  "files": [
+    "dist",
+    "license",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mamane19/spenn-node.git"
+  },
+  "keywords": [
+    "pindo",
+    "pindo-js"
+  ],
+  "bugs": {
+    "url": "https://github.com/mamane19/pindo-js/issues"
+  },
+  "homepage": "https://github.com/mamane19/spenn-js#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "mocha": "^9.1.1",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0"
+  }
+}
