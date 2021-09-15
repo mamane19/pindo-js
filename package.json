@@ -10,7 +10,7 @@
   "main": "./dist/pindo.ts",
   "scripts": {
     "build": "tsc",
-    "test": "ts-mocha tests/**/**/*.test.ts",
+    "test": "ts-mocha tests/**/*.test.ts",
     "coverage": "nyc yarn test",
     "lint": "eslint src/**/*.ts"
   },
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:mamane19/spenn-node.git"
+    "url": "git@github.com:mamane19/pindo-js.git"
   },
   "keywords": [
     "pindo",
@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@types/chai": "^4.2.21",
-    "@types/mocha": "^9.0.0"
+    "@types/mocha": "^9.0.0",
+    "node-fetch": "^3.0.0"
   }
 }
