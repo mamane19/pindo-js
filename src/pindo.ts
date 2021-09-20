@@ -15,7 +15,7 @@ export class Pindo {
     const auth = `Basic ${Buffer.from(`${username}:${password}`).toString(
       "base64"
     )}`;
-    let data: object;
+    let data: any;
     let response;
     try {
       response = await fetch(url, {
@@ -29,7 +29,7 @@ export class Pindo {
       throw new PindoError(e.statusCode, e.message, e.type, e.stackTrace);
     }
     if (data.hasOwnProperty("token")) {
-      const token = data.token; //TODO: check if token is valid and return it.
+      const token: string = data.token; //TODO: check if token is valid and return it.
       return token;
     }
     throw new PindoUnexpectedResponseError(
@@ -45,7 +45,7 @@ export class Pindo {
     const auth = `Basic ${Buffer.from(`${username}:${password}`).toString(
       "base64"
     )}`;
-    let data: object;
+    let data: any;
     let response;
     try {
       response = await fetch(url, {
@@ -96,7 +96,7 @@ export class Pindo {
   async balance(token: string): Promise<number> {
     const url = `${this.baseUrl}/wallets/self`;
     const auth = `Bearer ${token}`;
-    var data = {};
+    var data: any = {};
     let response;
     try {
       response = await fetch(url, {
@@ -165,7 +165,7 @@ export class Pindo {
       webhook_url: webHookURL,
       sms_retries: retriesCount,
     };
-    var data = {};
+    var data: any = {};
     let response;
     try {
       response = await fetch(url, {
