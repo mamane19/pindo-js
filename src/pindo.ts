@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import fetch from "node-fetch";
 import {
   PindoError,
@@ -6,7 +5,7 @@ import {
   PindoUnexpectedResponseError,
 } from "./pindo_errors";
 
-// A Dart API client for pindo.io. Check www.pindo.io for more info.
+// A Typescript API client for pindo.io. Check www.pindo.io for more info.
 export class Pindo {
   baseUrl!: "https://api.pindo.io";
 
